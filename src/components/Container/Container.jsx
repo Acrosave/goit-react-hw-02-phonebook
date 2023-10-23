@@ -1,10 +1,10 @@
-import PropTypes from 'prop-types';
-import s from './Container.module.css';
+import styled from 'styled-components';
 
-export default function Container({ children }) {
-    return <div className={s.container}>{children}</div>
-}
+const Container = styled.div`
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 25px;
+`;
 
-Container.propTypes = {
-    children: PropTypes.node,
-}
+export default Container;
